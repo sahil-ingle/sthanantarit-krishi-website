@@ -1,19 +1,18 @@
-
 nav li {
-    float: left;
+  float: left;
 }
 
 nav ul {
-    background-color: #ffffff;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  background-color: #ffffff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
- 
+
 .active {
-    background-color: #04AA6D;
+  background-color: #04AA6D;
 }
 
 nav li a {
@@ -30,62 +29,66 @@ nav li a:hover .dropdown:hover .dropbtn {
 }
 
 .dropdown {
-    float: left;
-    overflow: hidden;
-  }
+  float: left;
+  overflow: hidden;
+}
 
 .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /*  Nav Bar  End*/
 
 
 footer {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+
 }
 
 
 footer li {
-    float: left;
-    display: inline;
-    padding: 15px ;
+  display: inline;
+  padding: 15px;
 }
 
