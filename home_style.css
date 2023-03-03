@@ -1,20 +1,29 @@
 
 #rcorners {
-  border-radius: 25px;
+  border-radius: 20px;
   border: 2px solid #73AD21;
   padding: 20px;
   width: 40%;
   height: 100%;
   position: relative;
-  background: #ccc;
   float: left;
 }
-
-article{
-    float: center;
-    padding-left: 70%;
-    
+#rcorners2 {
+  border-radius: 20px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  float: right;
 }
+
+
+
+main{
+  display: inline;
+}
+
 
 .button {
     appearance: none;
@@ -29,7 +38,7 @@ article{
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
-    margin: 0;
+    margin-bottom: 5%;
     min-height: 60px;
     min-width: 0;
     outline: none;
@@ -42,6 +51,7 @@ article{
     touch-action: manipulation;
     width: 50%;
     will-change: transform;
+
   }
   
   .button:disabled {

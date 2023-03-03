@@ -13,38 +13,39 @@
 </head>
 
 <body>
-
-    <nav>
-        <ul>
-            <li> <a href="homepage.html"> Home </a> </li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Options
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="SearchByState.html">State</a>
-                        <a href="SearchBySoil.html">Soil</a>
-                        <a href="SearchBySeason.html">Season</a>
-                        <a href="SearchByCrop.html">Crop</a>
+    <header>
+        <nav>
+            <ul>
+                <li> <a class="active" href="homepage.html"> Home </a> </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Options
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="SearchByState.html">State</a>
+                            <a href="SearchBySoil.html">Soil</a>
+                            <a href="SearchBySeason.html">Season</a>
+                            <a href="SearchByCrop.html">Crop</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Language
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="">English</a>
-                        <a href="">Hindi</a>
-                        <a href="">Marathi</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Language
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="">English</a>
+                            <a href="">Hindi</a>
+                            <a href="">Marathi</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li style="float:right"> <a href="about.html"> About </a> </li>
-        </ul>
-    </nav>
+                </li>
+                <li style="float:right"> <a href="about.html"> About </a> </li>
+            </ul>
+        </nav>
+    </header>
     <hr>
     <form name="myform" id="myForm">
 
@@ -73,24 +74,18 @@
 
     <img src="india_map.jpg" width="300px" height="300px" alt="">
 
-    <hr>
+    <footer>
+        <hr>
+        <ul>
+            <li> <a href="homepage.html"> Home </a> </li>
+            <li> <a href="about.html"> About </a> </li>
+        </ul>
+        <p> This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
+            Ministry of Agriculture and Farmers Welfare, Government of India
+            <br>Last Updated : 08 JANUARY, 2021
+        </p>
 
-    <ul>
-        <li> <a href="homepage.html"> Home </a> </li>
-        <li>
-            <select name="options" id="optionsSel" size="1" onchange="location = this.value">
-                <option value="" selected=" selected"> Options</option>
-                <option value="SearchBySoil.html">Soil </option>
-                <option value="SearchBySeason.html">Season</option>
-                <option value="SearchByCrop.html">Crop</option>
-            </select>
-        </li>
-        <li> <a href="about.html"> About </a> </li>
-    </ul>
-    <p> This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
-        Ministry of Agriculture and Farmers Welfare, Government of India
-        <br>Last Updated : 08 JANUARY, 2021
-    </p>
+    </footer>
 
 </body>
 
