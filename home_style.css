@@ -3,6 +3,18 @@
   --main-padding:0px;
 }
 
+body{
+  background-color: #435052;
+}
+.container1{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: 
+      "nav"
+      "img";
+  grid-gap: 0.2rem;
+}
 
 .container{
   display: grid;
@@ -14,6 +26,7 @@
       "map btn3 btn4"
       "footer footer footer";
   grid-gap: 0.2rem;
+  background-color: #ffffff;
   
 }
 
@@ -23,11 +36,22 @@
   justify-content: center;
 }
 
+#image{
+  width:100%;
+  height: 90vh;
+}
+
+#img{
+  grid-area: img;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
 
 #map{
   grid-area: map;
   border-radius: var(--main-radius);
   padding: var(--main-padding);
+  
 }
 
 
