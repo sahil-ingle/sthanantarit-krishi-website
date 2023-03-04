@@ -20,8 +20,7 @@ nav{
   border-radius: var(--main-radius);
   padding: var(--main-padding);
 }
-main{
-  background-color: brown;
+#map{
   grid-area: main;
   border-radius: var(--main-radius);
   padding: var(--main-padding);

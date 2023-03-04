@@ -7,11 +7,11 @@
 .container{
   display: grid;
   height: 100vh;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 0.5fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1.5fr 0.5fr;
   grid-template-areas: 
-      "home_map btn1 btn2"
-      "home_map btn3 btn4"
+      "map btn1 btn2"
+      "map btn3 btn4"
       "footer footer footer";
   grid-gap: 0.2rem;
   
@@ -24,8 +24,8 @@
 }
 
 
-#home_map{
-  grid-area: home_map;
+#map{
+  grid-area: map;
   border-radius: var(--main-radius);
   padding: var(--main-padding);
 }
@@ -69,7 +69,7 @@ footer{
       "btn2"
       "btn3"
       "btn4"
-      "main"
+      "map"
       "footer";
   }
   
