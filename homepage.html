@@ -39,53 +39,48 @@
 </head>
 
 <body>
-
-
     <div class="container1">
-            <nav>
-                <ul>
-                    <li> <a class="active" href="homepage.html"> Home </a> </li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">Options
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="SearchByState.html">State</a>
-                                <a href="SearchBySoil.html">Soil</a>
-                                <a href="SearchBySeason.html">Season</a>
-                                <a href="SearchByCrop.html">Crop</a>
-                            </div>
+        <nav id="navbar">
+            <ul>
+                <li href="javascript:void(0)"> <a class="active" href="homepage.html"> Home </a> </li>
+                <li href="javascript:void(0)">
+                    <div class="dropdown">
+                        <button class="dropbtn">Options
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="SearchByState.html">State</a>
+                            <a href="SearchBySoil.html">Soil</a>
+                            <a href="SearchBySeason.html">Season</a>
+                            <a href="SearchByCrop.html">Crop</a>
                         </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">Language
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="">English</a>
-                                <a href="">Hindi</a>
-                                <a href="">Marathi</a>
-                            </div>
+                    </div>
+                </li>
+                <li href="javascript:void(0)">
+                    <div class="dropdown">
+                        <button class="dropbtn">Language
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="">English</a>
+                            <a href="">Hindi</a>
+                            <a href="">Marathi</a>
                         </div>
-                    </li>
-                    <li style="float:right"> <a href="about.html"> About </a> </li>
-                </ul>
-            </nav>
+                    </div>
+                </li>
+                <li style="float:right" href="javascript:void(0)"> <a href="about.html"> About </a> </li>
+            </ul>
+        </nav>
 
 
         <div id="img">
             <img src="homepage.png" id="image">
         </div>
-        
+        <div id="welcometext">Welcome</div>
 
     </div>
-    <div class="container">
+    <div class="container2">
         <div class="grid-item" id="map">
-        </div>
-        <div id="welcome">
-            welcome
         </div>
         <div class="grid-item" id="btn1">
             <a href="SearchByState.html">
@@ -117,10 +112,25 @@
                 <br>Last Updated : 08 JANUARY, 2021
             </p>
         </footer>
+    
 
     </div>
 
+    
+    <script>
+        window.onscroll = function () { myFunction() };
 
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 

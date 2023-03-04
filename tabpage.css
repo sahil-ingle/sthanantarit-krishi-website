@@ -3,16 +3,20 @@
   --main-padding:0px;
 }
 
+body{
+  margin: 0;
+}
+
+
 .container {
   display: grid;
-  height: 100vh;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 0.2fr 3fr 0.5fr;
+  grid-template-rows: 0.2fr 3fr;
   grid-template-areas: 
     "nav nav nav"
-    "main selector show_info"
+    "map selector show_info"
     "footer footer footer";
-  grid-gap: 0.2em;
+  grid-gap: 0em;
 }
 
 nav{
@@ -21,23 +25,24 @@ nav{
   padding: var(--main-padding);
 }
 #map{
-  grid-area: main;
+  grid-area: map;
   border-radius: var(--main-radius);
   padding: var(--main-padding);
 }
 
 #selector{
-  background-color: #222222;
   grid-area: selector;
   border-radius: var(--main-radius);
   padding: var(--main-padding);
 }
 
+
+
 #show_info{
-  background-color: #242424;
   grid-area: show_info;
   border-radius: var(--main-radius);
   padding: var(--main-padding);
+  text-align: center;
 }
 
 footer{
@@ -46,18 +51,30 @@ footer{
   padding: var(--main-padding);
 }
 
+#navbar {
+  z-index: 1
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 
 nav li {
   float: left;
 }
 
 nav ul {
-  background-color: #ffffff;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #435052;
 }
 
 .active {
@@ -73,13 +90,17 @@ nav li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-nav li a:hover .dropdown:hover .dropbtn {
-  background-color: #111;
+nav li a:hover{
+  background-color: #4f7250;
 }
 
 .dropdown {
   float: left;
   overflow: hidden;
+}
+
+.dropdown:hover{
+  background-color: #4f7250;
 }
 
 .dropdown .dropbtn {
@@ -91,6 +112,7 @@ nav li a:hover .dropdown:hover .dropbtn {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+
 }
 
 
@@ -118,14 +140,14 @@ nav li a:hover .dropdown:hover .dropbtn {
 
 .dropdown:hover .dropdown-content {
   display: block;
+
 }
 
 /*  Nav Bar  End*/
 
 /* Selector*/
 .select {
-  margin-top: 100px;
-  padding: 32px;
+  padding: 20px;
 }
 
 .select-box {
@@ -243,15 +265,13 @@ nav li a:hover .dropdown:hover .dropbtn {
 /* Selector*/
 
 footer {
-  overflow: hidden;
-  padding: 10px;
   text-align: center;
-  color: rgb(0, 0, 0);
-  height: auto;
+  color: rgb(255, 255, 255);
+  height: 100%;
   width: 100%;
   bottom: 0;
   position: relative;
-
+  background-color: #435052;
 }
 
 
@@ -259,4 +279,5 @@ footer li {
   display: inline;
   padding: 15px;
 }
+
 
