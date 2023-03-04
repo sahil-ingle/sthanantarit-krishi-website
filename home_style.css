@@ -4,7 +4,7 @@
 }
 .container1{
   background-image: url(homepage.png);
-  background-size: fit;
+  background-size: contain;
   height: 100vh;
   background-repeat: no-repeat;
   

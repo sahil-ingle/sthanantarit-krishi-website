@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <header>
+
+    <div class="container">
         <nav>
             <ul>
                 <li> <a class="active" href="homepage.html"> Home </a> </li>
@@ -45,47 +46,72 @@
                 <li style="float:right"> <a href="about.html"> About </a> </li>
             </ul>
         </nav>
-    </header>
-    <hr>
-    <form name="myform" id="myForm">
 
-        <div class="select-state">
-            State:
-            <select name="state" id="stateSel" size="1">
-                <option value="" selected=" selected"> Please Select State</option>
-                <option value="">kerela</option>
-                <option value="">punjab</option>
-                <option value="">maharashtra</option>
-            </select>
+        <main>
+            <img src="india_map.jpg" width="300px" height="300px" alt="">
+        </main>
+
+        <div class="selector">
+            <div class="select">
+                <h2>Select State</h2>
+
+                <div class="select-box">
+                    <div class="options-container">
+                        <div class="option">
+                            <input type="radio" class="radio" id="maharashtra" name="category" />
+                            <label for="automobiles">Maharashtra</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="gujrat" name="category" />
+                            <label for="automobiles">Gujrat</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="rajastan" name="category" />
+                            <label for="automobiles">Rajastan</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="goa" name="category" />
+                            <label for="automobiles">Goa</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="bengal" name="category" />
+                            <label for="automobiles">West Bengal</label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="selected">
+                        Select a state
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Start Typing..." />
+                    </div>
+                </div>
+            </div>
+
+            <script src="tabpage.js"></script>
+            
+
+        </div>
+        <div class="show_info">
+            Info Above crop
         </div>
 
-        <div class="select-district">
-            District/city:
-            <select name="district" id="districtSel" size="1">
-                <option value="" selected=" selected"> Please Select district/city </option>
-                <option value="">mumbai</option>
-                <option value="">thane</option>
-                <option value="">kolkata</option>
-            </select>
-        </div>
+        <footer>
+            <hr>
+            <ul>
+                <li> <a href="homepage.html"> Home </a> </li>
+                <li> <a href="about.html"> About </a> </li>
+            </ul>
+            <p> This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
+                Ministry of Agriculture and Farmers Welfare, Government of India
+                <br>Last Updated : 08 JANUARY, 2021
+            </p>
 
-        <input class="submitted" type="submit">
-    </form>
+        </footer>
+    </div>
 
-    <img src="india_map.jpg" width="300px" height="300px" alt="">
-
-    <footer>
-        <hr>
-        <ul>
-            <li> <a href="homepage.html"> Home </a> </li>
-            <li> <a href="about.html"> About </a> </li>
-        </ul>
-        <p> This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
-            Ministry of Agriculture and Farmers Welfare, Government of India
-            <br>Last Updated : 08 JANUARY, 2021
-        </p>
-
-    </footer>
 
 </body>
 

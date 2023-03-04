@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <div class="container">
         <nav>
             <ul>
                 <li> <a class="active" href="homepage.html"> Home </a> </li>
@@ -44,38 +44,55 @@
                 <li style="float:right"> <a href="about.html"> About </a> </li>
             </ul>
         </nav>
-    </header>
-    <hr>
-    <form name="myform" id="myForm">
 
-        <div class="select-soil">
-            Soil :
-            <select name="soil" id="soilSel" size="1">
-                <option value="" selected=" selected"> Please Select Soil</option>
-                <option value="">Black Soil</option>
-                <option value="">Red Soil</option>
-                <option value="">Yellow Soil</option>
-            </select>
+        <main>
+            <img src="india_map.jpg" width="300px" height="300px" alt="">
+        </main>
+
+        <div class="selector">
+            <form name="myform" id="myForm">
+
+                <div class="select-state">
+                    State:
+                    <select name="state" id="stateSel" size="1">
+                        <option value="" selected=" selected"> Please Select State</option>
+                        <option value="">kerela</option>
+                        <option value="">punjab</option>
+                        <option value="">maharashtra</option>
+                    </select>
+                </div>
+        
+                <div class="select-district">
+                    District/city:
+                    <select name="district" id="districtSel" size="1">
+                        <option value="" selected=" selected"> Please Select district/city </option>
+                        <option value="">mumbai</option>
+                        <option value="">thane</option>
+                        <option value="">kolkata</option>
+                    </select>
+                </div>
+        
+                <input class="submitted" type="submit">
+            </form>
+
+        </div>
+        <div class="show_info">
+            Info Above crop
         </div>
 
-
-        <input class="submitted" type="submit">
-    </form>
-
-    <img src="india_map.jpg" width="300px" height="300px" alt="">
-
-    <footer>
-        <hr>
-        <ul>
-            <li> <a href="homepage.html"> Home </a> </li>
-            <li> <a href="about.html"> About </a> </li>
-        </ul>
-        <p> This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
-            Ministry of Agriculture and Farmers Welfare, Government of India
-            <br>Last Updated : 08 JANUARY, 2021
-        </p>
-
-    </footer>
+        <footer>
+            <hr>
+            <ul>
+                <li> <a href="homepage.html"> Home </a> </li>
+                <li> <a href="about.html"> About </a> </li>
+            </ul>
+            <p> This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
+                Ministry of Agriculture and Farmers Welfare, Government of India
+                <br>Last Updated : 08 JANUARY, 2021
+            </p>
+    
+        </footer>
+    </div>
 </body>
 
 </html>
