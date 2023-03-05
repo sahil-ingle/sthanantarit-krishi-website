@@ -5,6 +5,7 @@
 
 body{
   margin: 0;
+  background-color: #435052;
 }
 
 
@@ -16,7 +17,7 @@ body{
     "nav nav nav"
     "map selector show_info"
     "footer footer footer";
-  grid-gap: 0em;
+  grid-gap: 0.2em;
 }
 
 nav{
@@ -28,12 +29,15 @@ nav{
   grid-area: map;
   border-radius: var(--main-radius);
   padding: var(--main-padding);
+  background-color: #d9ffff;
+  border-width: 20px;
 }
 
 #selector{
   grid-area: selector;
   border-radius: var(--main-radius);
   padding: var(--main-padding);
+  background-color: #d9ffff;
 }
 
 
@@ -43,6 +47,7 @@ nav{
   border-radius: var(--main-radius);
   padding: var(--main-padding);
   text-align: center;
+  background-color: #d9ffff;
 }
 
 footer{
@@ -158,7 +163,7 @@ nav li a:hover{
 }
 
 .select-box .options-container {
-  background: #2f3640;
+  background: #787878;
   color: #f5f6fa;
   max-height: 0;
   width: 100%;
@@ -171,7 +176,7 @@ nav li a:hover{
 }
 
 .selected {
-  background: #2f3640;
+  background: #0fb4bb;
   border-radius: 8px;
   margin-bottom: 8px;
   color: #f5f6fa;
@@ -225,7 +230,7 @@ nav li a:hover{
 }
 
 .select-box .option:hover {
-  background: #414b57;
+  background: #11d2d9;
 }
 
 .select-box label {
@@ -246,7 +251,7 @@ nav li a:hover{
   position: absolute;
   border-radius: 8px 8px 0 0;
   z-index: 100;
-  border: 8px solid #2f3640;
+  border: 8px solid #787878;
 
   opacity: 0;
   pointer-events: none;
