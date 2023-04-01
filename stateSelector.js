@@ -74,9 +74,9 @@ const districtData = {
       }
   });
 
-  window.addEventListener("hashchange", function() {
+ /* window.addEventListener("hashchange", function() {
     location.reload();
- });
+ });*/
   
 
 // When the district selector changes, print the selected district to the console
