@@ -1,4 +1,43 @@
+let variable;
+let state_var = "SearchByState.html";
+
+if (location.hash === "#") {
+  variable = "-1";
+} else if (location.hash === "#JammuKashmir") {
+  variable = "36";
+}else if (location.hash ===  "#AndhraPradesh" ) {variable =  "2" ;}
+else if (location.hash ===  "#ArunachalPradesh" ) {variable =  "3" ;}
+else if (location.hash ===  "#Assam" ) {variable =  "4" ;}
+else if (location.hash ===  "#Bihar" ) {variable =  "5" ;}
+else if (location.hash ===  "#Chhattisgarh" ) {variable =  "7" ;}
+else if (location.hash ===  '#Goa' ) {variable =  "11" ;}
+else if (location.hash ===  '#Gujarat' ) {variable =  "12" ;}
+else if (location.hash ===  '#Haryana' ) {variable =  "13" ;}
+else if (location.hash ===  '#HimachalPradesh' ) {variable =  "14" ;}
+else if (location.hash ===  '#Jharkhand' ) {variable =  "16" ;}
+else if (location.hash ===  '#Karnataka' ) {variable =  "17" ;}
+else if (location.hash ===  '#Kerala'	 ) {variable =  "18" ;}
+else if (location.hash ===  '#Maharashtra' ) {variable =  "21" ;}
+else if (location.hash ===  '#MadhyaPradesh'	 ) {variable =  "20" ;}
+else if (location.hash ===  '#Manipur' ) {variable =  "22" ;}
+else if (location.hash ===  '#Meghalaya' ) {variable = "23" ;}
+else if (location.hash ===  '#Mizoram' ) {variable =  "24" ;}
+else if (location.hash ===  '#Nagaland' ) {variable =  "25" ;}
+else if (location.hash ===  '#Orissa' ) {variable =  "26" ;}
+else if (location.hash ===  '#Punjab' ) {variable =  "28" ;}
+else if (location.hash ===  '#Rajasthan' ) {variable =  "29" ;}
+else if (location.hash ===  '#Sikkim'	 ) {variable =  "30" ;}
+else if (location.hash ===  '#TamilNadu'	 ) {variable =  "31" ;}
+else if (location.hash ===  '#Tripura' ) {variable =  "32";}
+else if (location.hash ===  '#Telangana' ) {variable =  "37";}
+else if (location.hash ===  '#UttarPradesh' ) {variable =  "33" ;}
+else if (location.hash ===  '#Uttarakhand' ) {variable =  "34" ;}
+else if (location.hash ===  '#WestBengal' ) {variable =  "35" ;}
+else if (location.hash ===  '#AndamanNicobar' ) {variable =  "1" ;}
+else if (location.hash ===  '#Chandigarh' ) {variable =  "6" ;}
+
 var simplemaps_countrymap_mapdata={
+  
   main_settings: {
     //General settings
 		width: "responsive", //or 'responsive'
@@ -43,7 +82,7 @@ var simplemaps_countrymap_mapdata={
 		zoom: "yes",
     back_image: "no",
     initial_back: "no",
-    initial_zoom: "-1",
+    initial_zoom: variable,
     initial_zoom_solo: "no",
     region_opacity: 1,
     region_hover_opacity: 0.6,
@@ -73,267 +112,268 @@ var simplemaps_countrymap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html/AndamanNicobar"
     },
     "2": {
       name: "Andhra Pradesh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#AndraPradesh"
     },
     "3": {
       name: "Arunachal Pradesh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#ArunachalPradesh"
     },
     "4": {
       name: "Assam",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Assam"
     },
     "5": {
       name: "Bihar",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Bihar"
     },
     "6": {
       name: "Chandigarh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Chandigarh"
     },
     "7": {
       name: "Chhattisgarh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Chhattisgarh"
     },
     "8": {
       name: "Dadra And Nagar Haveli",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#DadraNagarHaveli"
     },
     "9": {
       name: "Daman And Diu",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#DamanDiu"
     },
     "10": {
       name: "Delhi",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Delhi"
     },
     "11": {
       name: "Goa",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Goa"
     },
     "12": {
       name: "Gujarat",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Gujarat"
     },
     "13": {
       name: "Haryana",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Haryana"
     },
     "14": {
       name: "Himachal Pradesh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#HimachalPradesh"
     },
     "16": {
       name: "Jharkhand",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Jharkhand"
     },
     "17": {
       name: "Karnataka",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Karnataka",
     },
     "18": {
       name: "Kerala",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Kerala"
     },
     "19": {
       name: "Lakshadweep",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Lakshadweep"
     },
     "20": {
       name: "Madhya Pradesh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#MadhyaPradesh"
     },
     "21": {
       name: "Maharashtra",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Maharashtra"
     },
     "22": {
       name: "Manipur",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Manipur"
     },
     "23": {
       name: "Meghalaya",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Meghalaya"
     },
     "24": {
       name: "Mizoram",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Mizoram"
     },
     "25": {
       name: "Nagaland",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Nagaland"
     },
     "26": {
       name: "Orissa",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Orissa"
     },
     "27": {
       name: "Puducherry",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Puducherry"
     },
     "28": {
       name: "Punjab",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Punjab"
     },
     "29": {
       name: "Rajasthan",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Rajasthan"
     },
     "30": {
       name: "Sikkim",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Sikkim"
     },
     "31": {
       name: "Tamil Nadu",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#TamilNadu"
     },
     "32": {
       name: "Tripura",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Tripura"
     },
     "33": {
       name: "Uttar Pradesh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#UtterPradesh"
     },
     "34": {
       name: "Uttaranchal",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Uttarakhand"
     },
     "35": {
       name: "West Bengal",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#WestBengal"
     },
     "36": {
       name: "Jammu And Kashmir",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#JammuKashmir"
     },
     "37": {
       name: "Telangana",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Telangana"
     },
     "38": {
       name: "Ladakh",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "SearchByState.html#Ladakh"
     }
   },
-  locations: {
+  /*locations: {
     "0": {
       lat: 18.987807,
       lng: 72.836447,
       name: "Mumbai"
     }
-  },
+  },*/
   labels: {}
 };
+

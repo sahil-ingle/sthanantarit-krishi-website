@@ -59,6 +59,26 @@ const districtData = {
   });
 
 
+  // Check for state name in URL
+  const urlStateMatch = window.location.hash.match(/^#(\w+)$/);
+  if (urlStateMatch) {
+      const stateName = urlStateMatch[1];
+      stateSelector.value = stateName;
+  }
+  
+  // Listen for changes to the state selector
+  stateSelector.addEventListener("change", (event) => {
+      const selectedState = event.target.value;
+      if (selectedState) {
+          window.location.hash = selectedState;
+      }
+  });
+
+  window.addEventListener("hashchange", function() {
+    location.reload();
+ });
+  
+
 // When the district selector changes, print the selected district to the console
 districtSelector.addEventListener("change", () => {
   const selectedDistrict = districtSelector.value;
