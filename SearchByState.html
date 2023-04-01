@@ -12,6 +12,7 @@
     <script src="countrymap.js"></script>
 
 
+
 </head>
 
 <body>
@@ -50,51 +51,51 @@
         </nav>
 
         <div class="grid-item" id="map">
-            
+
         </div>
 
         <div id="selector">
             <div class="select">
-                <h2>Select State</h2>
+                <h2>Select a State</h2>
+                <label for="state">Select a state:</label>
+                <select id="state" name="state">
+                    <option value="">--Select--</option>
+                    <option value="AndraPradesh">Andhra Pradesh</option>
+                    <option value="ArunachalPradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="HimachalPradesh">Himachal Pradesh</option>
+                    <option value="JammuKashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="MadyaPradesh">Madya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="TamilNadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttaranchal">Uttaranchal</option>
+                    <option value="UttarPradesh">Uttar Pradesh</option>
+                    <option value="WestBengal">West Bengal</option>
+                </select>
 
-                <div class="select-box">
-                    <div class="options-container">
-                        <div class="option">
-                            <input type="radio" class="radio" id="maharashtra" name="category" />
-                            <label for="automobiles">Maharashtra</label>
-                        </div>
-                        <div class="option">
-                            <input type="radio" class="radio" id="gujrat" name="category" />
-                            <label for="automobiles">Gujrat</label>
-                        </div>
-                        <div class="option">
-                            <input type="radio" class="radio" id="rajastan" name="category" />
-                            <label for="automobiles">Rajastan</label>
-                        </div>
-                        <div class="option">
-                            <input type="radio" class="radio" id="goa" name="category" />
-                            <label for="automobiles">Goa</label>
-                        </div>
-                        <div class="option">
-                            <input type="radio" class="radio" id="bengal" name="category" />
-                            <label for="automobiles">West Bengal</label>
-                        </div>
-                        
-                    </div>
-
-                    <div class="selected">
-                        Select a state
-                    </div>
-
-                    <div class="search-box">
-                        <input type="text" placeholder="Start Typing..." />
-                    </div>
-                </div>
             </div>
-
-            <script src="tabpage.js"></script>
-            
-
+                <label for="district">Select Districts:</label>
+                <select id="district" name="district">
+                    <option value="">--Select--</option>
+                </select>
         </div>
         <div id="show_info">
             <p>This is Info About crop</p>
@@ -114,6 +115,8 @@
     </div>
 
 
+    <script src="tabpage.js"></script>
+    <script src="stateSelector.js"></script>
 </body>
 
 </html>
