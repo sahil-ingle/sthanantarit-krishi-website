@@ -57,8 +57,9 @@
         <div id="selector">
             <div class="select">
                 <h2>Select a State</h2>
+                <h2 id="state-name">Assam</h2>
                 <label for="state">Select a state:</label>
-                <select id="state" name="state">
+                <select id="state" name="state" onchange=handleChange()>
                     <option value="">--Select--</option>
                     <option value="AndraPradesh">Andhra Pradesh</option>
                     <option value="ArunachalPradesh">Arunachal Pradesh</option>
@@ -96,7 +97,9 @@
                 <select id="district" name="district">
                     <option value="">--Select--</option>
                 </select>
+
         </div>
+
         <div id="show_info">
             <p>This is Info About crop</p>
         </div>
@@ -117,6 +120,7 @@
 
     <script src="tabpage.js"></script>
     <script src="stateSelector.js"></script>
+    
 </body>
 
 </html>
