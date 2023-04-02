@@ -43,6 +43,8 @@ const districtData = {
   // Get the state and district selectors
   const stateSelector = document.querySelector("#state");
   const districtSelector = document.querySelector("#district");
+  const seasonSelector = document.querySelector("#season");
+  const soilSelector = document.querySelector("#soil");
   
   // When the state selector changes, populate the district selector with the districts for the selected state
   stateSelector.addEventListener("change", () => {
@@ -77,10 +79,29 @@ const districtData = {
  /* window.addEventListener("hashchange", function() {
     location.reload();
  });*/
+
   
 
 // When the district selector changes, print the selected district to the console
+
+stateSelector.addEventListener("change", () => {
+  const selectedState = stateSelector.value;
+  console.log("Selected State:", selectedState);
+});
+
 districtSelector.addEventListener("change", () => {
   const selectedDistrict = districtSelector.value;
   console.log("Selected district:", selectedDistrict);
 });
+
+seasonSelector.addEventListener("change", () => {
+  const selectedSeason = seasonSelector.value;
+  console.log("Selected Season:", selectedSeason);
+});
+
+soilSelector.addEventListener("change", () => {
+  const selectedSoil = soilSelector.value;
+  console.log("Selected Soil:", selectedSoil);
+});
+
+

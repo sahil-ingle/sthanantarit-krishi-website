@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>India Map</title>
     <style>
-      #map {
-        width: 800px;
-        height: 600px;
-        margin: 0 auto;
+      /* Style the select element */
+      select.goog-te-combo {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #333;
       }
-      .state {
-        fill: #9e9e9e;
-        stroke: #fff;
-        stroke-width: 1;
-      }
-      .state:hover {
-        fill: #f44336;
-        cursor: pointer;
+
+      /* Style the options inside the select element */
+      select.goog-te-combo option {
+        background-color: #fff;
+        color: #333;
       }
     </style>
   </head>
   <body>
-    <svg id="map"></svg>
-    <script src="test.js"></script>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            autoDisplay: false,
+            gaTrack: false,
+            gaId: "",
+            // Set the removeLogo option to true
+            removeLogo: true
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <p>This example displays a horizontal translate button.</p>
   </body>
 </html>

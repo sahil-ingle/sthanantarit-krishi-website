@@ -11,6 +11,7 @@
     <script src="mapdata.js"></script>
     <script src="countrymap.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="googleTranslate.css">
 
 </head>
 
@@ -33,15 +34,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Language
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="">English</a>
-                            <a href="">Hindi</a>
-                            <a href="">Marathi</a>
-                        </div>
+                    <div id="google_translate_element">
+                        
                     </div>
                 </li>
                 <li style="float:right"> <a href="about.html"> About </a> </li>
@@ -53,41 +47,36 @@
         </div>
 
         <div id="selector">
+
             <div class="select">
-                <h2>Select Season</h2>
-
-                <div class="select-box">
-                    <div class="options-container">
-                        <div class="option">
-                            <input type="radio" class="radio" id="rabi" name="category" />
-                            <label for="automobiles">Rabi (July - October)</label>
-                        </div>
-                        <div class="option">
-                            <input type="radio" class="radio" id="kharib" name="category" />
-                            <label for="automobiles">Kharib (Ocober - March)</label>
-                        </div>
-                        <div class="option">
-                            <input type="radio" class="radio" id="all_year" name="category" />
-                            <label for="automobiles">Thruoughout year</label>
-                        </div>
-                        
-                    </div>
-
-                    <div class="selected">
-                        Select a season
-                    </div>
-
-                    <div class="search-box">
-                        <input type="text" placeholder="Start Typing..." />
-                    </div>
-                </div>
+                <h2>Search by Season</h2>
+                <label for="season">Select a season:</label>
+                    <select id="season" name="season">
+                        <option value="">--Select--</option>
+                        <option value="kharif">Kharif (July - October)</option>
+                        <option value="rabi">Rabi (October - March)</option>
+                        <option value="allYear">Throughout the year</option>
+                    </select>
             </div>
 
-            <script src="tabpage.js"></script>
-            
+            <div class="select">
+                <label for="soil">Select a Soil:</label>
+                <select id="soil" name="soil">
+                    <option value="">--Select a Soil--</option>
+                    <option value="ForestSoil">Forest soil</option>
+                    <option value="AridSoil">Arid soil</option>
+                    <option value="BlackSoil">Black Soil</option>
+                    <option value="LateriteSoil">Laterite soil</option>
+                    <option value="AlluvialSoil">Alluvial soil</option>
+                    <option value="RedYellowSoil">Red and Yellow soil</option>
+                </select>
 
+                </div>
         </div>
-        <div class="show_info">
+
+           
+            
+        <div id="show_info">
             Info Above crop
         </div>
 
@@ -103,6 +92,33 @@
     
         </footer>
     </div>
+
+    <script src="tabpage.js"></script>
+
+    <script src="SoilSeasonSelector.js"></script>
+
+
+    <script>
+
+        function googleTranslateElementInit() {
+    
+          new google.translate.TranslateElement({
+    
+            pageLanguage: 'en',
+
+            includedLanguages : 'en,as,bn,brx,doi,gu,hi,kn,ks,kok,mai,ml,mni,mr,ne,or,pa,sa,sat,sd,ta,te,ur',
+    
+            autoDisplay: 'true',
+    
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+    
+          }, 'google_translate_element');
+    
+        }
+    
+      </script>
+    
+    <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script> 
 </body>
 
 </html>

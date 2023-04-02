@@ -11,12 +11,11 @@
     <script src="mapdata.js"></script>
     <script src="countrymap.js"></script>
 
-
+    <link rel="stylesheet" type="text/css" href="googleTranslate.css">
 
 </head>
 
 <body>
-
     <div class="container">
         <nav>
             <ul>
@@ -35,15 +34,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Language
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="">English</a>
-                            <a href="">Hindi</a>
-                            <a href="">Marathi</a>
-                        </div>
+                    <div id="google_translate_element" style="width: 100px;">
+                    
                     </div>
                 </li>
                 <li style="float:right"> <a href="about.html"> About </a> </li>
@@ -56,9 +48,12 @@
 
         <div id="selector">
             <div class="select">
-                <h2>Select a State</h2>
+                <h2>Search by State</h2>
                 <label for="state">Select a state:</label>
+
                 <select id="state" name="state" onchange=handleChange()>
+                    <div class="select-box">
+                    <div class="options-container">
                     <option value="">--Select--</option>
                     <option value="AndraPradesh">Andhra Pradesh</option>
                     <option value="ArunachalPradesh">Arunachal Pradesh</option>
@@ -89,14 +84,28 @@
                     <option value="Uttaranchal">Uttaranchal</option>
                     <option value="UttarPradesh">Uttar Pradesh</option>
                     <option value="WestBengal">West Bengal</option>
+                    </div>
+                    </div>
                 </select>
 
             </div>
+            <div class="select">
                 <label for="district">Select Districts:</label>
                 <select id="district" name="district">
                     <option value="">--Select--</option>
                 </select>
-
+            </div>
+                
+            <div class="select">
+                <label for="season">Select a season:</label>
+                    <select id="season" name="season">
+                        <option value="">--Select a season--</option>
+                        <option value="kharif">Kharif (July - October)</option>
+                        <option value="rabi">Rabi (October - March)</option>
+                        <option value="allYear">Throughout the year</option>
+                    </select>
+            </div>
+                
         </div>
 
         <div id="show_info">
@@ -118,7 +127,32 @@
 
 
     <script src="tabpage.js"></script>
+    
     <script src="stateSelector.js"></script>
+
+   
+
+    <script>
+
+        function googleTranslateElementInit() {
+    
+          new google.translate.TranslateElement({
+    
+            pageLanguage: 'en',
+
+            includedLanguages : 'en,as,bn,brx,doi,gu,hi,kn,ks,kok,mai,ml,mni,mr,ne,or,pa,sa,sat,sd,ta,te,ur',
+    
+            autoDisplay: 'true',
+    
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+    
+          }, 'google_translate_element');
+    
+        }
+    
+      </script>
+    
+    <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script> 
     
 </body>
 
