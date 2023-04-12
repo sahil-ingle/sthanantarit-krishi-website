@@ -112,7 +112,7 @@ var simplemaps_countrymap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "SearchByState.html/AndamanNicobar"
+      url: "SearchByState.html#AndamanNicobar"
     },
     "2": {
       name: "Andhra Pradesh",
