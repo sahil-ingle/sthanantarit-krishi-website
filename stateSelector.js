@@ -39,8 +39,87 @@ const districtData = {
    
    
   }
-  
+
   // Get the state and district selectors
+const stateSelector = document.querySelector("#state");
+const districtSelector = document.querySelector("#district");
+const seasonSelector = document.querySelector("#season");
+const soilSelector = document.querySelector("#soil");
+
+// When the state selector changes, populate the district selector with the districts for the selected state
+function populateDistricts() {
+  const selectedState = stateSelector.value;
+  const districts = districtData[selectedState];
+  // Clear the district selector and add the new options
+  districtSelector.innerHTML = "";
+  for (const district of districts) {
+    const option = document.createElement("option");
+    option.value = district;
+    option.textContent = district;
+    districtSelector.appendChild(option);
+  }
+}
+
+// Check for state name in URL
+const urlStateMatch = window.location.hash.match(/^#(\w+)$/);
+if (urlStateMatch) {
+  const stateName = urlStateMatch[1];
+  stateSelector.value = stateName;
+  populateDistricts();
+}
+
+// Listen for changes to the state selector
+stateSelector.addEventListener("change", (event) => {
+  const selectedState = event.target.value;
+  if (selectedState) {
+    window.location.hash = selectedState;
+    populateDistricts();
+  }
+});
+
+window.addEventListener("hashchange", function() {
+  const urlStateMatch = window.location.hash.match(/^#(\w+)$/);
+  if (urlStateMatch) {
+    const stateName = urlStateMatch[1];
+    stateSelector.value = stateName;
+    populateDistricts();
+  }
+});
+
+
+  window.addEventListener("hashchange", function() {
+    location.reload();
+ });
+
+  
+
+// When the district selector changes, print the selected district to the console
+
+stateSelector.addEventListener("change", () => {
+  const selectedState = stateSelector.value;
+  console.log("Selected State:", selectedState);
+});
+
+districtSelector.addEventListener("change", () => {
+  const selectedDistrict = districtSelector.value;
+  console.log("Selected district:", selectedDistrict);
+});
+
+seasonSelector.addEventListener("change", () => {
+  const selectedSeason = seasonSelector.value;
+  console.log("Selected Season:", selectedSeason);
+});
+
+soilSelector.addEventListener("change", () => {
+  const selectedSoil = soilSelector.value;
+  console.log("Selected Soil:", selectedSoil);
+});
+
+
+
+
+  
+  /* Get the state and district selectors
   const stateSelector = document.querySelector("#state");
   const districtSelector = document.querySelector("#district");
   const seasonSelector = document.querySelector("#season");
@@ -76,32 +155,4 @@ const districtData = {
       }
   });
 
- /* window.addEventListener("hashchange", function() {
-    location.reload();
- });*/
-
-  
-
-// When the district selector changes, print the selected district to the console
-
-stateSelector.addEventListener("change", () => {
-  const selectedState = stateSelector.value;
-  console.log("Selected State:", selectedState);
-});
-
-districtSelector.addEventListener("change", () => {
-  const selectedDistrict = districtSelector.value;
-  console.log("Selected district:", selectedDistrict);
-});
-
-seasonSelector.addEventListener("change", () => {
-  const selectedSeason = seasonSelector.value;
-  console.log("Selected Season:", selectedSeason);
-});
-
-soilSelector.addEventListener("change", () => {
-  const selectedSoil = soilSelector.value;
-  console.log("Selected Soil:", selectedSoil);
-});
-
-
+  */

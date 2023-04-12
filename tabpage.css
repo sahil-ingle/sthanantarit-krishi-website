@@ -8,11 +8,17 @@ body{
   background-color: #435052;
 }
 
+#h1Map{
+  color: rgb(0, 0, 0); text-align: center;
+  text-shadow: 0 0 1px #55ccff, 0 0 2px #9595ff;
+
+}
+
 
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 0.2fr 3fr;
+  grid-template-rows: 0.2fr 2fr;
   grid-template-areas: 
     "nav nav nav"
     "map selector show_info"
