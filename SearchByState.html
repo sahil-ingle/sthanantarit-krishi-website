@@ -46,14 +46,14 @@
             <h1 id="h1Map">Click the map to select a state.<hr style="border-top: 4px solid #435052;"></h1>
         </div>
 
-        
 
         <div id="selector">
             <h1 id="h1Map">Search By States.<hr style="border-top: 4px solid #435052;"></h1>
             <div class="select">
-                <label for="state">Select a state:</label>
+                <p style="text-align: center; font-size:20px; margin-top: 15px; margin-bottom: 5px;">Select a state:</p>
+                <label for="state"></label>
 
-                <select id="state" name="state" onchange=handleChange()>
+                <select class="selector-box" id="state" name="state" onchange=handleChange()>
                     <div class="select-box">
                     <div class="options-container">
                     <option value="">--Select--</option>
@@ -92,15 +92,17 @@
 
             </div>
             <div class="select">
-                <label for="district">Select Districts:</label>
-                <select id="district" name="district">
+                <p style="text-align: center; font-size:20px; margin-top: 15px; margin-bottom: 5px;">Select Districts:</p>
+                <label for="district"></label>
+                <select class="selector-box" id="district" name="district">
                     <option value="">--Select--</option>
                 </select>
             </div>
                 
             <div class="select">
-                <label for="season">Select a season:</label>
-                    <select id="season" name="season">
+                <p style="text-align: center; font-size:20px; margin-top: 15px; margin-bottom: 5px;">Select a Season</p>
+                <label for="season"></label>
+                    <select class="selector-box" id="season" name="season">
                         <option value="">--Select a season--</option>
                         <option value="kharif">Kharif (July - October)</option>
                         <option value="rabi">Rabi (October - March)</option>
